@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f7;
+  padding: 24px;
+  margin: 0;
+}
+
+.report-box {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  width: 1600px;
+  margin: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.title h2 {
+  color: #073b74;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.brand {
+  text-align: right;
+  color: #073b74;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.date {
+  color: #777;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.summary {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.card-value {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+th {
+  background: linear-gradient(90deg, #073b74, #0b5cad);
+  color: #ffffff;
+  padding: 11px 9px;
+  border: 1px solid #0b3b75;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+td {
+  padding: 12px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #d6dce5;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8f9fc;
+}
+
+.site {
+  text-align: left;
+  font-size: 13px;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.client {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.spoc {
+  font-weight: 700;
+  color: #334155;
+  text-align: center;
+}
+
+.target {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.balance {
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 55px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.green {
+  background: #d4edda;
+  color: #155724;
+}
+
+.yellow {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.red {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+<div class="report-box">
+
+<div class="header">
+  <div class="title">
+    <h2>Business Performance Report</h2>
+    <div class="subtitle">Daily Projection vs Target Analysis</div>
+  </div>
+  <div class="brand">
+    AMPLISPOT ANALYTICS
+    <div class="date">08 Jun 2026</div>
+  </div>
+</div>
+
+<div class="summary">
+  <div class="card">
+    <div class="card-title">Total Accounts</div>
+    <div class="card-value">14</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Green 95%+</div>
+    <div class="card-value">9</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Yellow 51–94%</div>
+    <div class="card-value">5</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Red 0–50%</div>
+    <div class="card-value">0</div>
+  </div>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th>Website</th>
+  <th>Client</th>
+  <th>User Base</th>
+  <th>SPOC</th>
+  <th>22nd Feb</th>
+  <th>23rd Feb</th>
+  <th>Projection 25th Feb</th>
+  <th>Target</th>
+  <th>Balance Targets</th>
+  <th>Balance %</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td class="site">lifemitra.com - GA4</td>
+  <td class="client">SBI LM</td>
+  <td>229081</td>
+  <td class="spoc">Drashti</td>
+  <td>149504</td>
+  <td>149504</td>
+  <td>1757500</td>
+  <td class="target">1850000</td>
+  <td class="balance">1700496</td>
+  <td><span class="badge yellow">92%</span></td>
+</tr>
+<tr>
+  <td class="site">sbiliferecruitment.com - GA4</td>
+  <td class="client">SBI REC</td>
+  <td>13462</td>
+  <td class="spoc"></td>
+  <td>67116</td>
+  <td>67116</td>
+  <td>380000</td>
+  <td class="target">400000</td>
+  <td class="balance">332884</td>
+  <td><span class="badge yellow">83%</span></td>
+</tr>
+<tr>
+  <td class="site">iciciprulifepartner.com</td>
+  <td class="client">ICICI - SP Website</td>
+  <td>5696</td>
+  <td class="spoc"></td>
+  <td>2542</td>
+  <td>2542</td>
+  <td>95000</td>
+  <td class="target">100000</td>
+  <td class="balance">97458</td>
+  <td><span class="badge green">97%</span></td>
+</tr>
+<tr>
+  <td class="site">nimfpartner.com - GA4</td>
+  <td class="client">NIPPON</td>
+  <td>56228</td>
+  <td class="spoc"></td>
+  <td>12277</td>
+  <td>12277</td>
+  <td>123500</td>
+  <td class="target">130000</td>
+  <td class="balance">117723</td>
+  <td><span class="badge yellow">91%</span></td>
+</tr>
+<tr>
+  <td class="site">alwaysahead.in - GA4</td>
+  <td class="client">IPRU LIFE Shikhar</td>
+  <td>216488</td>
+  <td class="spoc">Prathamesh</td>
+  <td>210</td>
+  <td>210</td>
+  <td>114000</td>
+  <td class="target">120000</td>
+  <td class="balance">119790</td>
+  <td><span class="badge green">100%</span></td>
+</tr>
+<tr>
+  <td class="site">iprulifeadvisors.com</td>
+  <td class="client">IPRU LIFE ADVISOR</td>
+  <td>215627</td>
+  <td class="spoc"></td>
+  <td>586</td>
+  <td>586</td>
+  <td>114000</td>
+  <td class="target">120000</td>
+  <td class="balance">119414</td>
+  <td><span class="badge green">100%</span></td>
+</tr>
+<tr>
+  <td class="site">agent-opportunity.com - GA4</td>
+  <td class="client">ICICI REC</td>
+  <td>4321</td>
+  <td class="spoc"></td>
+  <td>16973</td>
+  <td>16973</td>
+  <td>332500</td>
+  <td class="target">350000</td>
+  <td class="balance">333027</td>
+  <td><span class="badge green">95%</span></td>
+</tr>
+<tr>
+  <td class="site">libertyinsurancepartners.com</td>
+  <td class="client">Liberty GI</td>
+  <td>439</td>
+  <td class="spoc"></td>
+  <td>161</td>
+  <td>161</td>
+  <td>9500</td>
+  <td class="target">10000</td>
+  <td class="balance">9839</td>
+  <td><span class="badge green">98%</span></td>
+</tr>
+<tr>
+  <td class="site">abhiadvisor.com - GA4</td>
+  <td class="client">ABHI</td>
+  <td>5217</td>
+  <td class="spoc">Binal</td>
+  <td>7123</td>
+  <td>7123</td>
+  <td>104500</td>
+  <td class="target">110000</td>
+  <td class="balance">102877</td>
+  <td><span class="badge yellow">94%</span></td>
+</tr>
+<tr>
+  <td class="site">hdfclifepartners.com - GA4</td>
+  <td class="client">HDFC WEBSITE</td>
+  <td>14124</td>
+  <td class="spoc"></td>
+  <td>98631</td>
+  <td>98631</td>
+  <td>617500</td>
+  <td class="target">650000</td>
+  <td class="balance">551369</td>
+  <td><span class="badge yellow">85%</span></td>
+</tr>
+<tr>
+  <td class="site"></td>
+  <td class="client">HDFC REC</td>
+  <td>6833</td>
+  <td class="spoc"></td>
+  <td></td>
+  <td></td>
+  <td>114000</td>
+  <td class="target">120000</td>
+  <td class="balance">120000</td>
+  <td><span class="badge green">100%</span></td>
+</tr>
+<tr>
+  <td class="site">maxlife-insurance.com - GA4</td>
+  <td class="client">AXIS MAX REC</td>
+  <td>16833</td>
+  <td class="spoc"></td>
+  <td>10710</td>
+  <td>10710</td>
+  <td>180500</td>
+  <td class="target">190000</td>
+  <td class="balance">179290</td>
+  <td><span class="badge green">94%</span></td>
+</tr>
+<tr>
+  <td class="site">training.uii.ms</td>
+  <td class="client">UIIC Traning Web</td>
+  <td>22989</td>
+  <td class="spoc"></td>
+  <td>60</td>
+  <td>60</td>
+  <td>95000</td>
+  <td class="target">100000</td>
+  <td class="balance">99940</td>
+  <td><span class="badge green">100%</span></td>
+</tr>
+<tr>
+  <td class="site">uii.ms</td>
+  <td class="client">UIIC</td>
+  <td>7833</td>
+  <td class="spoc"></td>
+  <td>748</td>
+  <td>748</td>
+  <td>95000</td>
+  <td class="target">100000</td>
+  <td class="balance">99252</td>
+  <td><span class="badge green">99%</span></td>
+</tr>
+<tr>
+  <td class="site">India First Life Insurance Website</td>
+  <td class="client">India First Life Insurance Website</td>
+  <td></td>
+  <td class="spoc"></td>
+  <td>2857</td>
+  <td>2857</td>
+  <td></td>
+  <td class="target"></td>
+  <td class="balance"></td>
+  <td><span class="badge "></span></td>
+</tr>
+<tr>
+  <td class="site">India First Life Recruitment</td>
+  <td class="client">India First Life Recruitment</td>
+  <td></td>
+  <td class="spoc"></td>
+  <td>1259</td>
+  <td>1259</td>
+  <td></td>
+  <td class="target"></td>
+  <td class="balance"></td>
+  <td><span class="badge "></span></td>
+</tr>
+</tbody>
+</table>
+
+<div class="footer">Generated Automatically by Amplispot Analytics</div>
+
+</div>
+</body>
+</html>
